@@ -12,21 +12,21 @@ Fred, the owner of a burger bistro, wants to increase his customer base by optim
 
 The dataset consists of 30 rows, each representing a different color, and 41 columns, tracking daily click and view counts over 20 weekdays. Each color received 100 daily views. The dataset is structured as follows:
 
-	•	**Color**: The text color used in the ad.
-	•	**Click Count: Day 1** - Day 20: The number of times an ad of a specific color was clicked on each day.
-	•	**View Count: Day 1 - Day 20**: The number of times an ad was viewed (consistently 100 views per day).
+	•	Color: The text color used in the ad.
+	•	Click Count: Day 1 - Day 20: The number of times an ad of a specific color was clicked on each day.
+	•	View Count: Day 1 - Day 20: The number of times an ad was viewed (consistently 100 views per day).
 
 ## Key Steps and Analysis
 
 	1.	Data Cleaning:
-	•	Redundant “View Count” columns were removed, as all view counts were consistently 100.
-	•	The dataset was cleaned to focus on click counts for each color.
+		•	Redundant “View Count” columns were removed, as all view counts were consistently 100.
+		•	The dataset was cleaned to focus on click counts for each color.
 	2.	Permutation Testing:
-	•	A permutation test was conducted to compare the click-through rates of blue against the other 29 colors. The test determines whether the observed differences in click rates are statistically significant.
+		•	A permutation test was conducted to compare the click-through rates of blue against the other 29 colors. The test determines whether the observed differences in click rates are statistically significant.
 	3.	Bonferroni Correction:
-	•	To account for multiple comparisons, the Bonferroni correction was applied, adjusting the significance level to 0.05 / 29 = 0.00172, ensuring we avoid false positives.
+		•	To account for multiple comparisons, the Bonferroni correction was applied, adjusting the significance level to 0.05 / 29 = 0.00172, ensuring we avoid false positives.
 	4.	Visualization:
-	•	P-values from the permutation tests were visualized using a heatmap, highlighting any significant differences between colors and blue.
+		•	P-values from the permutation tests were visualized using a heatmap, highlighting any significant differences between colors and blue.
 
 Results
 
@@ -46,8 +46,8 @@ Fred can:
 
 Technologies and Tools Used
 
-	•	**Python**: For data analysis and statistical testing.
-	•	**Pandas**: For data manipulation and cleaning.
-	•	**NumPy**: For numerical computations and permutation testing.
-	•	**Matplotlib** & **Seaborn**: For data visualization, including heatmaps.
-	•	**Chardet**: For detecting the encoding of the CSV data file.
+	•	Python: For data analysis and statistical testing.
+	•	Pandas: For data manipulation and cleaning.
+	•	NumPy: For numerical computations and permutation testing.
+	•	Matplotlib & Seaborn: For data visualization, including heatmaps.
+	•	Chardet: For detecting the encoding of the CSV data file.
