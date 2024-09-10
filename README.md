@@ -28,23 +28,23 @@ The dataset consists of 30 rows, each representing a different color, and 41 col
 	4.	Visualization:
 		•	P-values from the permutation tests were visualized using a heatmap, highlighting any significant differences between colors and blue.
 
-Results
+## Results
 
 	•	Ultramarine emerged as a potentially better-performing color, with a higher click-through rate compared to blue. However, after applying the Bonferroni correction, its p-value of 0.0034 was not statistically significant.
 	•	The project concludes that Fred may consider replacing blue with ultramarine, but further testing is recommended to confirm its effectiveness.
 
-Conclusion
+## Conclusion
 
 While no statistically significant results were found after adjusting for multiple comparisons, ultramarine showed promise as a viable alternative to blue. The project highlights the importance of focusing on meaningful comparisons, as testing too many variables can introduce unnecessary uncertainty.
 
-Next Steps
+## Next Steps
 
 Fred can:
 
 	1.	Conduct a focused experiment comparing only blue and ultramarine to verify the results.
 	2.	Use the insights from this analysis to optimize future advertising strategies and increase click-through rates.
 
-Technologies and Tools Used
+## Technologies and Tools Used
 
 	•	Python: For data analysis and statistical testing.
 	•	Pandas: For data manipulation and cleaning.
